@@ -1,0 +1,66 @@
+Data Analytics
+Data- Numerical / Categorical
+
+Numerical-
+MEAN/MODE/MEDIAN
+Variance/ std deviation
+skewness- distribution
+kurtosis - how widely data distributed
+Categorical-
+unique values
+Mode
+
+Visualization
+Bar chart
+histogram
+pie chart
+scatter plot
+heat map
+line chart
+
+
+Sub ShowNames()
+Range("A2").Value = "Datamites"
+End Sub
+Sub ADD()
+Range("C5").Value = Range("a5").Value + Range("b5").Value
+End Sub
+Sub Subraction()
+Range("C6").Value = Range("a6").Value - Range("b6")
+End Sub
+Sub Multply()
+Range("C7").Value = Range("a7").Value * Range("b7")
+End Sub
+Sub Devidation()
+Range("C8").Value = Range("a8").Value / Range("b8")
+End Sub
+Sub VariableAdd()
+Dim num As Integer
+num = Range("f2").Value
+If num > 0 Then
+Range("g2").Value = "Positive"
+Else
+Range("g2").Value = "Negative"
+End If
+
+
+End Sub
+Sub EvenorOdd()
+Dim num As Integer
+num = Range("i2").Value
+If num Mod 2 = 0 Then
+Range("j2").Value = "Given Number is Even"
+Else
+Range("j2").Value = "Given Number is ODD"
+End If
+
+End Sub
+Sub MsgBox()
+Dim num As Integer
+num = Int(InputBox("Enter any number"))
+If num Mod 2 = 0 Then
+MsgBox (Str(num) + " is even number")
+Else
+MsgBox (Str(num) + " is odd number")
+End If
+End Sub
